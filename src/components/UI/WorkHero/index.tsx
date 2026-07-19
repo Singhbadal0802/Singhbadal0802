@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./style"
+import SortingGraph from "../SortingGraph";
 
 const WorkHero = () => {
   return (
@@ -9,8 +10,8 @@ const WorkHero = () => {
         <span className={style.lastname}> to build perfect with time.</span>
         </span>
       </div>
-      <div className="flex w-[40%] h-40 rounded-lg bg-white">
-
+      <div className="flex w-[40%] h-80 rounded-lg bg-white">
+        <SortingGraph/>
       </div>
     </div>
   );
