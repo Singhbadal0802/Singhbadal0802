@@ -3,7 +3,7 @@ import WorkHero from '@/components/UI/WorkHero'
 
 const page = () => {
   return (
-    <div className='flex w-full px-24'>
+    <div className='flex w-full px-8 md:px-24'>
         <WorkHero/>
     </div>
   )

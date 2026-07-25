@@ -20,7 +20,7 @@ function Navbar() {
     },
   ];
   return (
-    <div className="p-4 md:p-6 w-full flex items-center justify-center sticky z-[1] top-0">
+    <div className="p-4 md:p-6 w-full flex items-center justify-center fixed z-[1] top-0">
       <div id='navlinks-wrapper' className="flex flex-row w-max rounded-full g-white/10 backdrop-blur-md border border-text-secondary shadow-xl">
         {navItems.map((item, index) => (
           <div className="flex w-max text-black hover:scale-90 transition-all duration-500 hover:bg-primary rounded-full" key={index}>

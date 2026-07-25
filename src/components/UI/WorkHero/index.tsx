@@ -10,7 +10,7 @@ const WorkHero = () => {
         <span className={style.lastname}> to build perfect with time.</span>
         </span>
       </div>
-      <div className="flex w-[40%] h-80 rounded-lg bg-white">
+      <div className="flex w-auto h-80 rounded-lg bg-white">
         <SortingGraph/>
       </div>
     </div>

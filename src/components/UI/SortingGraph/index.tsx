@@ -53,7 +53,7 @@ const SortingGraph = () => {
 
 
   const renderElements = () => (
-    <div className="flex flex-row gap-4 my-8">
+    <div className="flex flex-wrap gap-4 my-8 p-4">
       {output?.map((element: number, index: number) => (
         <div
           key={`sorting-array-element-${element}`}
