@@ -12,20 +12,20 @@ type ExperienceEntry = {
   Description?: string;
 };
 
-const Experience: ExperienceEntry[] = [
-    {
-    Id: 1,
-    CompanyName: "Suretech InfoSoft Pvt. Ltd.",
-    Post: "Intern",
-    Duration: "Oct 2024 – Mar 2025"
-  },
-  {
-    Id: 2,
-    CompanyName: "Suretech InfoSoft Pvt. Ltd.",
-    Post: "Software Engineer",
-    Duration: "Mar 2025 – Now"
-  }
-];
+// const Experience: ExperienceEntry[] = [
+//     {
+//     Id: 1,
+//     CompanyName: "Suretech InfoSoft Pvt. Ltd.",
+//     Post: "Intern",
+//     Duration: "Oct 2024 – Mar 2025"
+//   },
+//   {
+//     Id: 2,
+//     CompanyName: "Suretech InfoSoft Pvt. Ltd.",
+//     Post: "Software Engineer",
+//     Duration: "Mar 2025 – Now"
+//   }
+// ];
 
 /** Company initials for the avatar badge, e.g. "Suretech Infosoft" → "SI". */
 const initials = (name: string) =>
@@ -67,6 +67,28 @@ function useTrailProgress<T extends HTMLElement>() {
 
 const Journey = () => {
   const [trailRef, progress] = useTrailProgress<HTMLDivElement>();
+  const [Experience, setExperience] = useState<ExperienceEntry[]>([]);
+  const url = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}/api/getExperience`
+
+  useEffect(() => {
+    const getResponse = async () => {
+      try {
+        const response: any = await fetch(url);
+
+        const data = await response.json();
+
+        if (data?.status?.toLowerCase() === "success") {
+          setExperience(data?.data ?? []);
+        } else {
+          throw new Error("Didn't get the Experience response");
+        }
+      } catch (error) {
+        console.error("Error in fetching Experience : ", error);
+      }
+    };
+
+    void getResponse();
+  }, []);
 
   return (
     <section className="w-full bg-[#ccd5ae] relative py-20 md:py-32 overflow-hidden">
