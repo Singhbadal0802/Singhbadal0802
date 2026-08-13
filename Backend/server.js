@@ -1,6 +1,5 @@
 import express from "express";
 import cors  from "cors";
-// import { Experience } from './utilities/index';
 
 const Experience = [
     {
