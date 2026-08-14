@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <div className="flex flex-col py-4 md:py-8 lg:px-24 lg:py-16 gap-2 lg:gap-4 mx-auto w-full bg-linear-to-r from-[#ccd5ae] to-white !pt-40">
-        <div className="flex flex-row">
+        <div className="flex flex-row mx-2">
           <div className="text-2xl md:text-4xl lg:text-6xl font-black text-black tracking-tighter leading-[1.2]">
             👋{" "}
           </div>
@@ -31,7 +31,7 @@ const About = () => {
 
       <GenericCard />
 
-      <div className="flex flex-col px-8 py-16 gap-8 bg-linear-to-t from-stone-100 to-white">
+      <div className="flex flex-col px-8 py-8 lg:py-16 gap-8 bg-linear-to-t from-stone-100 to-white">
         <h1 className="text-3xl font-bold">What drives me</h1>
         {WHY_DRIVES_ME.map((element) => (
           <div

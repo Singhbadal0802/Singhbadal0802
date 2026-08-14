@@ -54,8 +54,8 @@ const TechStack = () => {
                 ref={ref}
                 className={cn({
                   [style.techItem]: true,
-                  ["scale-100 mt-[10px] lg:-mt-[20px] opacity-100"]: !isVisible && inView,
-                  ["scale-90 opacity-20"]: !isVisible && !inView,
+                  ["md:scale-100 mt-[10px] lg:-mt-[20px] md:opacity-100"]: !isVisible && inView,
+                  ["md:scale-90 md:opacity-20"]: !isVisible && !inView,
                 })}
                 onClick={() => {
                   setSelectedTech(Tech);

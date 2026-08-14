@@ -1,5 +1,5 @@
 export default {
-    wrapper : "grid grid-cols-1 lg:grid-cols-2 p-8 md:p-16 lg:p-24 bg-[url('/background-grid-image.jpg')] bg-cover bg-center bg-no-repeat !pt-4",
+    wrapper : "grid gap-4 grid-cols-1 lg:grid-cols-2 p-8 md:p-16 lg:p-24 bg-[url('/background-grid-image.jpg')] bg-cover bg-center bg-no-repeat !pt-4",
     contentwrapper : "flex flex-col justify-center items-start gap-4",
     firstname : "flex flex-row gap-4 text-2xl md:text-4xl lg:text-6xl font-black text-black tracking-tighter leading-[0.85]",
     lastname : "text-text-secondary hover:text-black transition-colors duration-500 cursor-default",

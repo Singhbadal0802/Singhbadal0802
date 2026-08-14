@@ -131,7 +131,7 @@ const Stop = ({
 
 const GenericCard = () => {
   return (
-    <div className='flex gap-8 w-full p-8'>
+    <div className='flex flex-wrap lg:flex-nowrap gap-8 w-full p-8'>
       {Experience.map((company, index) => (
         <Stop
           key={company.Id}

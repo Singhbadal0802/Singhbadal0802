@@ -127,7 +127,7 @@ const Journey = () => {
         </div>
 
         {/* Trailhead marker at the very top */}
-        <div className="absolute left-[35px] md:left-1/2 -top-2 md:-translate-x-1/2 -translate-y-1/2 h-4 w-4 rounded-full bg-stone-800 ring-4 ring-[#ccd5ae]" />
+        <div className="absolute left-[30px] md:left-1/2 -top-2 md:-translate-x-1/2 -translate-y-1/2 h-4 w-4 rounded-full bg-stone-800 ring-4 ring-[#ccd5ae]" />
       </div>
     </section>
   );
@@ -159,7 +159,7 @@ const Stop = ({
       {/* Waypoint dot */}
       <div
         className={
-          "absolute left-0 top-10 h-7 w-7 -translate-x-1/2 rounded-full border-4 border-[#ccd5ae] transition-all duration-500 md:left-1/2 " +
+          "absolute left-[5px] md:left-0 top-10 h-7 w-7 -translate-x-1/2 rounded-full border-4 border-[#ccd5ae] transition-all duration-500 md:left-1/2 " +
           (inView ? "scale-100 opacity-100" : "scale-50 opacity-0") +
           " " +
           (isCurrent ? "bg-stone-900" : "bg-stone-600")
