@@ -5,6 +5,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary : #171717;
+  --brand-primary : #ccd5ae;
+  --secondary : #a1a1aa;
   --text-primary : #000;
   --text-secondary : #a1a1aa;
 }
@@ -15,6 +17,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-primary: var(--primary);
+  --color-brand-primary: var(--brand-primary);
+  --color-secondary: var(--secondary);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
 }
@@ -33,7 +37,7 @@ body {
 }
 
 .image-wrapper {
-  background: #ccd5aeff;
+  background: var(--brand-primary);
 
   border-radius: 40% 60% 55% 45% / 45% 35% 65% 55%;
 

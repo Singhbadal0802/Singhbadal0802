@@ -35,7 +35,7 @@ function useTrailProgress<T extends HTMLElement>() {
       const rect = el.getBoundingClientRect();
       const viewportH = window.innerHeight;
       const total = rect.height + viewportH * 0.5;
-      const seen = viewportH * 0.5 - rect.top;
+      const seen = viewportH * 1 - rect.top;
       setProgress(Math.min(1, Math.max(0, seen / total)));
     };
     onScroll();
@@ -53,7 +53,7 @@ function useTrailProgress<T extends HTMLElement>() {
 const Journey = () => {
   const [trailRef, progress] = useTrailProgress<HTMLDivElement>();
   const [Experience, setExperience] = useState<ExperienceEntry[]>([]);
-  const url = `${process.env.NEXT_PUBLIC_BACKEND_HOSTING_DOMAIN}/api/getExperience`
+  const url = '/api/getExperience';
 
   useEffect(() => {
     const getResponse = async () => {
