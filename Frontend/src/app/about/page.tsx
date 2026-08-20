@@ -22,8 +22,8 @@ const About = () => {
         <div className="px-8 md:px-20">{ABOUT_ME.description}</div>
         <div className="flex flex-col md:flex-row gap-4 my-2 hover:my-0 transiton-all duration-400 ease-in-out items-center pt-8 px-4 md:px-20 w-max py">
           {SOCIAL_BUTTONS.map((button) => (
-            <div key={button}>
-              <PrimeButton title={button} />
+            <div key={button.label}>
+              <PrimeButton title={button.label} url={button.href}/>
             </div>
           ))}
         </div>

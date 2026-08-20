@@ -4,14 +4,19 @@ import SortingGraph from "../SortingGraph";
 
 const WorkHero = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-16 bg-[#ccd5ae] rounded-lg w-full p-8">
-      <div className={style.firstname}>
-        <span>Believe,
-        <span className={style.lastname}> to build perfect with time.</span>
+    <div className="flex flex-col md:flex-row gap-4 lg:gap-16 bg-[#ccd5ae] rounded-2xl w-full p-8">
+      <div className="flex flex-col gap-4 lg:gap-8 text-sm">
+      <div className='text-2xl md:text-3xl font-bold uppercase tracking-[0.3em] text-black'>
+        <span>Believe, to build perfect
+        <span className={style.lastname}> with time.</span>
         </span>
       </div>
-      <div className="flex w-auto h-80 rounded-lg bg-white">
-        <SortingGraph/>
+      <span>If I take longer, expect something better than imagined.</span>
+      </div>
+      <div className="flex min-w-[230px] h-80 overflow-hidden rounded-[30%_70%_60%_40%/30%_30%_70%_70%] bg-white shadow-xl/30 bg-linear-to-r from-blud-600 to-white">
+        {/* <SortingGraph/> */}
+        {/* <video muted autoPlay loop playsInline src="/web-developer.mp4"/> */}
+        <video muted autoPlay loop playsInline src="/laptop.mp4"/>
       </div>
     </div>
   );

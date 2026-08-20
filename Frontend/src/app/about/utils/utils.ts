@@ -1,5 +1,11 @@
 import { WhyDrive } from "../type";
 
+type SocialLink = {
+  label: string;
+  href: string;
+  icon: "github" | "linkedin" | "x" | "mail";
+};
+
 export const ABOUT_ME = {
   header: "Hi, I'm Badal.",
   title: "Frontend Developer | React • Next.js • TypeScript",
@@ -14,4 +20,8 @@ export const WHY_DRIVES_ME: WhyDrive[] = [
   { id: 4, title: "💡 Builder", description: "I love turning ideas into real projects that help me learn something new." },
 ];
 
-export const SOCIAL_BUTTONS: string[] = ["Github", "LinkedIn", "Collaborate"];
+export const SOCIAL_BUTTONS: SocialLink[] = [
+  { label: "GitHub", href: "https://github.com/Singhbadal0802", icon: "github" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/badal-singh-a32715354", icon: "linkedin" },
+  { label: "Collaborate", href: "mailto:badalrkt23@gmail.com", icon: "x" },
+];

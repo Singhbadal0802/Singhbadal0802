@@ -58,7 +58,7 @@ const DEFAULT_SOCIALS: SocialLink[] = [
 const EMPTY_FORM: FormValues = { name: "", email: "", subject: "", message: "" };
 
 export default function ContactUs({
-  email = "hello@yourname.dev",
+  email = "badalrkt23@gmail.com",
   timezone = "IST, UTC+5:30",
   available = true,
   socials = DEFAULT_SOCIALS,
@@ -135,21 +135,21 @@ export default function ContactUs({
             </p>
 
             {/* Signature element: live-feeling availability status */}
-            <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-[var(--secondary)]/30 px-4 py-2">
+            <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-[var(--primary)] px-4 py-2">
               <span className="relative flex h-2 w-2">
                 {available && (
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--brand-primary)] opacity-75 motion-reduce:hidden" />
                 )}
                 <span
                   className={`relative inline-flex h-2 w-2 rounded-full ${
-                    available ? "bg-[var(--brand-primary)]" : "bg-[var(--secondary)]"
+                    available ? "bg-green-400" : "bg-[var(--secondary)]"
                   }`}
                 />
               </span>
               <span className="text-xs font-medium text-[var(--text-primary)]">
                 {available ? "Available for freelance work" : "Not currently available"}
               </span>
-              <span className="text-xs text-[var(--text-secondary)]">· {timezone}</span>
+              <span className="text-xs font-bold text-[var(--text-primary)]">· {timezone}</span>
             </div>
           </div>
 

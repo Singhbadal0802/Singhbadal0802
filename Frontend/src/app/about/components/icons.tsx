@@ -34,6 +34,6 @@ export const IconMap: Record<string, React.ReactNode> = {
     <CollaborateIcon className="relative z-10 flex items-center gap-2 text-[10px] md:text-xs font-black uppercase tracking-widest" />
   ),
   Git: <GitIcon />,
-  Github: <GithubIcon />,
+  GitHub: <GithubIcon />,
   LinkedIn: <LinkedInIcon />,
 };
