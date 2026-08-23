@@ -7,6 +7,7 @@ const WorkHero = () => {
   const videoFileArray = ["laptop", "web-developer", "work-hero"];
   const randomInt = Math.random();
   const videoSourceFile = Math.floor(randomInt * 3);
+  console.log('randomInt : ', randomInt, 'videoSourceFile : ', videoSourceFile);
 
   return (
     <div className="flex flex-col md:flex-row gap-4 lg:gap-16 bg-[#ccd5ae] rounded-2xl w-full p-8">
