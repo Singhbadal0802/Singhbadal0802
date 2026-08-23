@@ -52,7 +52,7 @@ type Status = "idle" | "sending" | "sent" | "error";
 const DEFAULT_SOCIALS: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/Singhbadal0802", icon: "github" },
   { label: "LinkedIn", href: "https://linkedin.com/in/badal-singh-a32715354", icon: "linkedin" },
-  { label: "X", href: "https://x.com/yourusername", icon: "x" },
+  // { label: "X", href: "https://x.com/yourusername", icon: "x" },
 ];
 
 const EMPTY_FORM: FormValues = { name: "", email: "", subject: "", message: "" };
