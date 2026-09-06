@@ -5,6 +5,12 @@
 I build interfaces that feel considered, not templated — from SSR-driven React apps to zero-dependency backend tooling. I care as much about clean architecture as I do about how something feels to use.
 </p>
 
+<p align="center">
+  <a href="https://singhbadal0802-x1py.vercel.app/">
+    <img src="https://img.shields.io/badge/Want%20to%20know%20more%20about%20me%3F-6C63FF?style=for-the-badge&logo=readthedocs&logoColor=white" />
+  </a>
+</p>
+
 ---
 
 ### 🧭 What I'm about
