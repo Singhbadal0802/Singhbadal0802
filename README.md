@@ -1,4 +1,4 @@
-<h1 align="center">Hey, I'm Prem Kamban 👋</h1>
+<h1 align="center">Hey, I'm Badal Singh 👋</h1>
 <h3 align="center">Frontend-focused Full Stack Developer | Next.js · TypeScript · Tailwind CSS</h3>
 
 <p align="center">
