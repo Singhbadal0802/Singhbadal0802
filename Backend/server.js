@@ -1,5 +1,10 @@
+import 'dotenv/config';
+import connectDB from './config/db.js';
+import authRoutes from './routes/authRoutes.js';
 import express from "express";
 import cors  from "cors";
+
+connectDB();
 
 const Experience = [
     {
@@ -20,6 +25,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use('/api/auth', authRoutes);
 
 // API routes
 

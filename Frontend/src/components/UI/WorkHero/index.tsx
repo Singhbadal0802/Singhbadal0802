@@ -35,7 +35,7 @@ const WorkHero = () => {
         <p>If I take longer, expect something better than imagined.</p>
       </div>
 
-      <div className="flex min-w-[230px] h-80 overflow-hidden rounded-[30%_70%_60%_40%/30%_30%_70%_70%] bg-white shadow-xl/30 bg-linear-to-r from-blue-600 to-white">
+      <div className="flex min-w-[230px] h-80 overflow-hidden rounded-[30%_70%_60%_40%/30%_30%_70%_70%] bg-white shadow-xl/30  transition-all duration-600 ease-in-out">
         {videoFile && (
           <video
             className="w-full h-full object-cover motion-reduce:hidden"
@@ -43,7 +43,6 @@ const WorkHero = () => {
             autoPlay
             loop
             playsInline
-            poster={`/${videoFile}-poster.jpg`}
             src={`/${videoFile}.mp4`}
           />
         )}
