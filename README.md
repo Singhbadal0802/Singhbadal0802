@@ -26,7 +26,7 @@ I'm a frontend developer who ends up doing full-stack work because I like unders
 
 ### 🚀 Featured Work
 
-**[Portfolio Site](#)** — *Next.js · TypeScript · Tailwind CSS*
+**[Portfolio Site](https://singhbadal0802-x1py.vercel.app)** — *Next.js · TypeScript · Tailwind CSS*
 A personal site built to avoid every "generic template" trap. Highlights include a `WorkHero` component with server-side video selection, full PWA support (manifest, Serwist service worker, iOS install banners), and a scroll-animated career timeline built from scratch with `IntersectionObserver` and animated proficiency bars — no charting library, just a custom hook.
 
 **[Monorepo Reverse Proxy](#)** — *Node.js (zero dependencies)*
