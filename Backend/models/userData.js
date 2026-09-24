@@ -6,13 +6,6 @@ import mongoose from "mongoose";
 // -------------------------
 const userSchema = new mongoose.Schema(
   {
-    userId: {
-      type: String,
-      required: true,
-      unique: true,
-      index: true,
-    },
-
     name: {
       type: String,
       required: true,
@@ -52,7 +45,7 @@ const userSchema = new mongoose.Schema(
       min: 0,
     },
   },
-  { _id: false }
+  { _id: true }
 );
 
 
@@ -282,7 +275,7 @@ const expenseTrackerSchema = new mongoose.Schema(
 
     summary: {
       type: summarySchema,
-      required: true,
+      defaul : {}
     },
 
     monthlySummary: {
