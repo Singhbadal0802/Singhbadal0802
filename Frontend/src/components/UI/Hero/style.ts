@@ -8,8 +8,8 @@ export default {
     collaborateButton : "flex-1 md:flex-initial min-w-[140px] md:min-w-[180px] group relative px-5 py-3 md:px-8 md:py-4 bg-black text-white rounded-full overflow-hidden transition-all duration-300 hover:pr-8 md:hover:pr-10 text-center flex items-center justify-center",
     collaborateContent : "relative z-10 flex items-center gap-2 text-[10px] md:text-xs font-black uppercase tracking-widest",
     collaborateArrowSvg : "lucide lucide-arrow-right w-3.5 h-3.5 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform",
-    resumeButton  : "flex-1 md:flex-initial w-[140px] md:w-[180px] hover:w-[220px] flex items-center justify-center gap-4 px-5 py-3 md:px-8 md:py-4 bg-white border border-black text-black rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-zinc-50 transition-all overflow-hidden",
-    resumeViewImg : "transition-transform duration-300 hover:rotate-[360deg]",
-    resumeDownloadSvg : "lucide lucide-download w-3.5 h-3.5 md:w-4 md:h-4",
+    resumeButton  : "flex flex-1 md:flex-initial items-center justify-center gap-2 px-3 py-1 md:px-6 md:py-2 bg-white border border-black text-black rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-zinc-50 transition-all overflow-hidden",
+    resumeViewImg : "transition-transform duration-300 hover:rotate-[360deg] m-2",
+    resumeDownloadSvg : "lucide lucide-download w-3.5 h-3.5 md:w-4 md:h-4 m-2",
     profileImgContainer : "bg-[#123b2d] rounded-[40%_60%_55%_45%/45%_35%_65%_55%]"
 }

@@ -16,8 +16,13 @@ const Experience = [
   {
     Id: 2,
     CompanyName: "Suretech InfoSoft Pvt. Ltd.",
+    Post: "Associate Software Engineer",
+    Duration: "Mar 2025 – Aug 2026"
+  },{
+    Id: 3,
+    CompanyName: "Suretech InfoSoft Pvt. Ltd.",
     Post: "Software Engineer",
-    Duration: "Mar 2025 – Now"
+    Duration: "Sep 2026 – Now"
   }
 ];
 
